@@ -1,5 +1,5 @@
 {
-    "name": "hianimw",
+    "name": "hianime",
     "version": "1.0.0",
     "author": {
         "name": "sobet",
@@ -12,7 +12,7 @@
     "module": [
         {
             "search": {
-                "url": "https://hianime.to/search.html",
+                "url": "https://hianime.to/filter",
                 "parameter": "keyword",
                 "documentSelector": "div.listupd article",
                 "title": "div.tt span",
@@ -23,7 +23,7 @@
                 "href": "a"
             },
             "featured": {
-                "url": "https://hianime.to/newest",
+                "url": "https://hianime.to/most-popular",
                 "documentSelector": "div.listupd article",
                 "title": "div.tt span",
                 "image": {
@@ -33,7 +33,7 @@
                 "href": "a"
             },
             "details": {
-                "baseURL": "https://hianime.to",
+                "baseURL": "https://hianime.to/home",
                 "aliases": {
                     "selector": "div.post-title h1",
                     "attribute": "text"
