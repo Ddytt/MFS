@@ -5,32 +5,32 @@
         "name": "sobet",
         "website": "https://google.com"
     },
-    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/hianime.jpg",
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/anivibe.jpg",
     "stream": "HLS",
     "language": "EN",
     "extractor": "dub-sub",
     "module": [
         {
             "search": {
-                "url": "https://hianime.to/search",
+                "url": "https://hianime.to/search.html",
                 "parameter": "keyword",
                 "documentSelector": "div.anime-list article",
-                "title": "div.title a",
+                "title": "div.title span",
                 "image": {
                     "url": "img",
                     "attribute": "src"
                 },
-                "href": "div.title a"
+                "href": "a"
             },
             "featured": {
-                "url": "https://hianime.to/latest",
+                "url": "https://hianime.to/newest",
                 "documentSelector": "div.anime-list article",
-                "title": "div.title a",
+                "title": "div.title span",
                 "image": {
                     "url": "img",
                     "attribute": "src"
                 },
-                "href": "div.title a"
+                "href": "a"
             },
             "details": {
                 "baseURL": "https://hianime.to",
@@ -38,9 +38,9 @@
                     "selector": "div.anime-title h1",
                     "attribute": "text"
                 },
-                "synopsis": "div.description",
-                "airdate": "div.anime-meta span:contains(Aired) + span",
-                "stars": "div.anime-meta span:contains(Rating) + span"
+                "synopsis": "div.synopsis",
+                "airdate": "div.meta span:contains(Aired) + span",
+                "stars": "div.meta span:contains(Rating) + span"
             },
             "episodes": {
                 "selector": "div.episode-list ul li a",
