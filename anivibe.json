@@ -15,7 +15,7 @@
                 "url": "https://hianime.to/",
                 "parameter": "keyword",
                 "documentSelector": "div.search-result-pop article",
-                "title": "div.title span",
+                "title": "div.container",
                 "image": {
                     "url": "img",
                     "attribute": "src"
@@ -25,7 +25,7 @@
             "featured": {
                 "url": "https://hianime.to/",
                 "documentSelector": "div.search-result-pop article",
-                "title": "div.tt span",
+                "title": "div.container",
                 "image": {
                     "url": "img",
                     "attribute": "src"
